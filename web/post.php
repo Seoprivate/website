@@ -5,7 +5,7 @@ function securityFilter(string $d): string
     $d = trim($d);
     $d = stripslashes($d);
     $d = htmlspecialchars($d);
-    return $data;
+    return $d;
 }
 
 $userName = securityFilter($_POST['user_name']);
